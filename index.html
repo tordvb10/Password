@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="blokade start" >
+        <div class="stable start">
+            <div class="blokade start" id="password">
+                <div class="box header">
+                    <span id="headerspan1">
+                        Generate a
+                    </span>
+                    <br/>
+                    <span id="headerspan2">
+                        random pasword
+                    </span>
+                </div>
+                <div class="box" id="insecure">
+                    Never use this password again
+                </div>
+                <div class="box Generate" id="password-length">
+                    Set password length: <input id="password-number" max="99" min="1" step="1" value="15">
+                </div>
+                <button onclick="generate()" class="box Generate">
+                    Generate passwords
+                </button>
+                <button onclick="numberson()" class="box Generate" id="Generate1">
+                    Numbers On
+                </button>
+                <button onclick="symbolson()" class="box Generate" id="Generate2">
+                    Symbols On
+                </button>
+                <div class="box" id="line"></div>
+                <div class="box password" id="password1">Passord1 </div>
+                <button onclick="copy('password1')" class="box copy" id="copy1"><img src="copy.png" alt="copy"></button>
+                <div id="password2" class="box password">Passord2</div>
+                <button onclick="copy('password2')" class="box copy" id="copy2"><img src="copy.png" alt="copy"></button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
